@@ -1,0 +1,26 @@
+<p>#定位</p>
+<p>position,定位相对哪一片空间进行定位不由得发问？
+没错，当然是显示器，更准确的说是视口（视觉入口），其坐标原点一般为左上位置。并且只有设置了position才能使用top,bottom,left,right,否则无法生效。
+其属性值包括：
+    static静态;
+    relative相对;
+    fixed固定;
+    absolute绝对</p>
+<p>默认为static,就是该怎么样就怎么样。
+而relative，则是相对于static进行偏移
+<img src="CSS_image/snipaste20220517_185307.jpg" alt="avater">
+这是静态的渲染效果：
+<img src="CSS_image/snipaste20220517_185324.jpg" alt="avater"></p>
+<p>之所以会和边界有些距离是因为margin不为0；</p>
+<p>然后呢，做一些调整：</p>
+<p><img src="CSS_image/snipaste20220517_190117.jpg" alt="avater"></p>
+<p>渲染效果：
+<img src="CSS_image/snipaste20220517_190105.jpg" alt="avater"></p>
+<p>相对于原来位置偏移了，上方偏移了60px,左边30px.</p>
+<p>修改为fixed:
+    <img src="CSS_image/snipaste20220517_192230.jpg" alt="avater"></p>
+<pre><code>渲染效果变成了：
+</code></pre>
+<p><img src="CSS_image/snipaste20220517_192213.jpg" alt="avater"></p>
+<p>相对于整个视口固定了</p>
+<p>当修改为absolute则是相对于父元素进行定位，请与relative进行一些区分。</p>

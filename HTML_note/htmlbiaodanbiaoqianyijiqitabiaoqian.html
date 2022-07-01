@@ -1,0 +1,30 @@
+<p>#表单标签以及其他标签</p>
+<p>##首先什么是表单？
+<img src="../images/snipaste20220510_214716.jpg" alt="avater"></p>
+<pre><code>浏览器渲染的效果：
+</code></pre>
+<p><img src="../images/snipaste20220510_214733.jpg" alt="avater"></p>
+<p>也就是平时注册和登录界面没有美化的样子，相信这么一说大家也就瞬间明白了，那代码是怎样一步一步实现它的呢？</p>
+<p>##代码分析</p>
+<p>比如：
+<img src="../images/snipaste20220510_215421.jpg" alt="avater"></p>
+<p>type,name,placehoder都是元素的属性，而引号部分就是它们的的值（value）。</p>
+<p>type属性表示标签的种类，包括“text”，“password”，“radio”等;</p>
+<p>name属性主要在单选框时有用，用来分组；</p>
+<p>placehoder属性就是显示一些提示符；</p>
+<p>##其他标签</p>
+<p>###区块标签</p>
+<pre><code>区块元素在浏览器显示时，通常会以新行来开始（和结束）。如：&lt;h1&gt;, &lt;pre&gt;, &lt;ul&gt;, &lt;table&gt;，&lt;div&gt; 等。
+简单理解就是：一个标签占一行。
+</code></pre>
+<p>###内联标签（也叫做行内标签）</p>
+<pre><code>内联元素相反，他们总是一个接一个进行显示，不会新起一行。如： &lt;span&gt;, &lt;input&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;等。
+简单理解就是：一行占多个标签，直到占满才换行。
+</code></pre>
+<p>###预设格式</p>
+<pre><code>&lt;pro&gt;&lt;/pro&gt;也就是保存标签原有的格式，不必向其他标签由于编译优化等原因而改变原有格式。
+</code></pre>
+<p>###特殊字符</p>
+<pre><code>就如同c语言中关键字冲突，所以用一些转义字符来显示关键字。
+特殊字符可参考ISO-8859-1 字符实体手册
+</code></pre>
